@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #fff;
+        }
+        .sidebar {
+            min-width: 230px;
+            max-width: 250px;
+            background: #20232a;
+            color: #fff;
+            height: 100vh;
+        }
+        .sidebar .nav-link {
+            color: #c3cfe4;
+        }
+        .sidebar .nav-link.active, .sidebar .nav-link:focus {
+            background: #e6eefa;
+            color: #1961e0;
+        }
+        .sidebar .profile-block {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+        .sidebar .profile-block .d-flex {
+            align-items: center;
+        }
+        .sidebar .profile-block img {
+            width: 32px;
+            height: 32px;
+        }
+        .main-content {
+            margin-left: 250px;
+            min-height: 100vh;
+            padding: 40px 30px 0 30px;
+        }
+        @media (max-width: 991px) {
+            .sidebar {
+                min-width: 100px;
+                max-width: 100vw;
+                position: relative;
+                height: auto;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar d-flex flex-column position-relative">
+            <div class="p-3 border-bottom">
+                <span class="fs-4 fw-bold"><i class="bi bi-bootstrap"></i> Меню</span>
+            </div>
+            <ul class="nav nav-pills flex-column gap-1 px-2 py-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active"><i class="bi bi-house"></i> Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi bi-list-task"></i> Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi bi-basket"></i> Заказы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi bi-person-lines-fill"></i> Контакты</a>
+                </li>
+            </ul>
+            <div class="profile-block border-top p-3">
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Профиль" class="rounded-circle me-2">
+                    <div>
+                        <span class="small d-block">Пользователь</span>
+                        <a href="#" class="link-light text-decoration-none small">Вход</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content flex-grow-1">
+            <div class="container-fluid">
+                <h1 class="text-center mb-5">Контакты</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="card p-4 shadow-sm">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Имя">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Почта</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Почта">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Сообщение</label>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Сообщение"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h5 class="mb-3">Наши контакты</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                            While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
