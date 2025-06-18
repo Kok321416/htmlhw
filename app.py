@@ -1,7 +1,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
 
-# Настройки сервера
 HOST = 'localhost'
 PORT = 8000
 
